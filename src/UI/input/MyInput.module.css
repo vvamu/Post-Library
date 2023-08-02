@@ -1,0 +1,17 @@
+.myInput{
+          height: 100%;
+          width: 30%;
+          border: 2px solid rgb(62, 118, 223);
+          color:rgb(41, 61, 129);
+          background: transparent;
+          font-size: large;
+          padding: 15px 0px;
+          margin: 10px 0px;
+          border-radius: 10px;
+
+
+}
+
+.inputDiv{
+          margin: 0;
+}

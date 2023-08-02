@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {useState} from "react"
 
-function App() {
+import "./styles/index.css";
+import PostList from "./components/PostList";
+import PostForm from "./components/PostForm";
+import db from "./db"
+import ColorComponent from "./components/ColorComponent";
+
+export default function App() {
+  var [posts,setPosts] = useState(db());
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PostList title="Posts" posts={posts} postEvent={setPosts} />
+      <hr/>
+      <PostForm postEvent={setPosts} />
+      <hr/>
+      <ColorComponent/>
     </div>
   );
 }
-
-export default App;

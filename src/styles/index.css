@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  font-size: 22px;
+  margin: 10px
+}
+
+.post{
+  display: flex;
+  padding:10px;
+  border: 2px solid rgb(62, 118, 223);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+
+}
+
+.post_description{
+  font-size:large;
+}
